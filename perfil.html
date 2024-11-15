@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Preferencias de Compra</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="img/tv.png">
+</head>
+<body>
+  <div id="app">
+    
+    <nav-bar></nav-bar>
+
+    
+    <div class="container mt-5">
+      <h2>Gestionar Preferencias de Compra</h2>
+      <form>
+        
+        <div class="form-group">
+          <label for="category">Categorías de Producto Preferidas</label>
+          <select class="form-control" id="category">
+            <option>Cocina</option>
+            <option>Electrónica</option>
+            <option>Ropa</option>
+            <option>Hogar</option>
+            <option>Juguetes</option>
+          </select>
+        </div>
+        
+      
+        <div class="form-group">
+          <label for="shipping">Método de Envío Preferido</label>
+          <select class="form-control" id="shipping">
+            <option>Estándar (5-7 días)</option>
+            <option>Rápido (2-3 días)</option>
+            <option>Envío Express (1 día)</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label for="purchaseFrequency">¿Con qué frecuencia compras productos online?</label>
+          <select class="form-control" id="purchaseFrequency">
+            <option>Una vez al mes</option>
+            <option>Una vez cada 3 meses</option>
+            <option>Una vez al año</option>
+            <option>Más de una vez al mes</option>
+          </select>
+        </div>
+       
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="emailNotifications">
+          <label class="form-check-label" for="emailNotifications">Recibir notificaciones de ofertas y novedades por correo electrónico</label>
+        </div>
+
+        <div class="form-group">
+          <label for="paymentMethod">Método de Pago Preferido</label>
+          <select class="form-control" id="paymentMethod">
+            <option>Tarjeta de Crédito</option>
+            <option>PayPal</option>
+            <option>Transferencia Bancaria</option>
+            <option>Contra Reembolso</option>
+          </select>
+        </div>
+
+     
+        <button type="submit" class="btn btn-primary">Guardar Preferencias</button>
+      </form>
+    </div>
+
+    
+    <footer-bar></footer-bar>
+
+  </div>
+
+  <script src="componentes.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
