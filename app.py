@@ -80,13 +80,13 @@ def change_password():
     connection = get_db_connection()
     if connection:
         cursor = connection.cursor(dictionary=True)
-        # Verificar si el usuario existe y la contraseña actual es correcta
+      
         query = "SELECT * FROM usuarios WHERE email = %s"
         cursor.execute(query, (email,))
         user = cursor.fetchone()
 
         if user and user['contraseña'] == old_password:
-            # Cambiar la contraseña
+
             update_query = "UPDATE usuarios SET contraseña = %s WHERE email = %s"
             cursor.execute(update_query, (new_password, email))
             connection.commit()
